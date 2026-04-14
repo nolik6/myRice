@@ -52,8 +52,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)    
 source ~/.zshrc    
     
-chsh    
-/bin/zshrc    
+chsh -s $(which zsh)  
     
 reboot
 ```
