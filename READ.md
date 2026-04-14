@@ -27,7 +27,7 @@ git clone https://github.com/nolik6/myRice.git
 
 ```
 cd myRice    
-cp -r kitty waybar wlogout wofi hypr fastfetch ~/.config    
+cp -r * ~/.config    
     
 cd Graphite-gtk-theme    
 ./install.sh
