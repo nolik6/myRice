@@ -39,9 +39,13 @@ cd Graphite-gtk-theme
 
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"    
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "$\\\{ZSH\\\_CUSTOM:-$HOME/.oh-my-zsh/custom\\\}/themes/powerlevel10k"    
-git clone https://github.com/zsh-users/zsh-autosuggestions $\\\{ZSH\\\_CUSTOM:-~/.oh-my-zsh/custom\\\}/plugins/zsh-autosuggestions    
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $\\\{ZSH\\\_CUSTOM:-~/.oh-my-zsh/custom\\\}/plugins/zsh-syntax-highlighting    
+# Zsh Syntax Highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+# Zsh Autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
     
 nvim ~/.zshrc    
 ZSH\\\_THEME="powerlevel10k/powerlevel10k"    
